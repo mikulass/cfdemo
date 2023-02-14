@@ -1,0 +1,9 @@
+---
+applications:
+- name: http-app
+  buildpack: paketo-buildpacks/httpd
+  random-route: true
+  memory: 64M
+  env:
+    BP_WEB_SERVER: httpd
+    BP_WEB_SERVER_ROOT: htdocs
